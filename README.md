@@ -1,6 +1,7 @@
 # Angular-Covid-Dashboard
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-xr3bbu)
+
 [Dashboard](http://angular-covid.s3-website.ap-south-1.amazonaws.com/)
 
 # Built with the help of Postman API Resource Center
