@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DateComponent {
 
-  private params: any;
+  public params: any;
 
   agInit(params: any): void {
     // .toISOString().slice(0,10)
