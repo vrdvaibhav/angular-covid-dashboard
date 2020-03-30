@@ -2,6 +2,8 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-xr3bbu)
 
+[Dashboard](http://angular-covid.s3-website.ap-south-1.amazonaws.com/)
+
 # Built with the help of Postman API Resource Center
 [Postman COVID-19 API Resource Center](https://covid-19-apis.postman.com/?mkt_tok=eyJpIjoiTXpVd01tUmlNMkV6WVRkaSIsInQiOiJLa2N5V0QweGhoTDFGd2FqanR5WmZPNkorY2pKRkZEekFmbUFUS2xvenJjczhha2FcL0RSOG1xODZzeElnWmlOSFg2V282Z2JGV1E5QWg3dGtlZU1hc1F5MVJ0eFJhczNcL2FncGxoTEpiaGowMlwvVWlxWTdBU3NBNUtORUJiRXV1QiJ9)
 
