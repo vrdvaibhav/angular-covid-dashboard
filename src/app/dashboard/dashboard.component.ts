@@ -13,7 +13,7 @@ import { DashboardService } from "./dashboard.service";
   styleUrls: ["./dashboard.component.css"]
 })
 export class DashboardComponent implements OnInit {
-  public gridOptions: GridOptions;
+  private gridOptions: GridOptions;
 
   constructor(private cases: DashboardService) {}
 
@@ -22,8 +22,7 @@ export class DashboardComponent implements OnInit {
       floatingFilter: true,
       defaultColDef: {
         sortable: true,
-        flex: 1,
-        resizable: true
+        flex: 1
       },
       onGridReady: function(params) {
         params.api.sizeColumnsToFit();
@@ -31,7 +30,7 @@ export class DashboardComponent implements OnInit {
     };
 
     this.gridOptions.columnDefs = [
-      { headerName: "Country", field: "country", filter: 'agTextColumnFilter', suppressSizeToFit:true },
+      { headerName: "Country", field: "country", filter: true, suppressSizeToFit:true },
       { headerName: "Cases", field: "cases" },
       { headerName: "Todays Cases", field: "todayCases",cellRendererFramework: YellowComponent },
       { headerName: "Deaths", field: "deaths" },
@@ -42,14 +41,14 @@ export class DashboardComponent implements OnInit {
       { headerName: "Last Updated", field: "updated", cellRendererFramework: DateComponent, suppressSizeToFit:true }
     ];
 
+    // this.gridOptions.rowData = [];
     this.getRawData();
   }
 
   getRawData() {
     this.cases.getCases().subscribe(
       data => {
-        const response: any = data;
-        this.gridOptions.api.setRowData(response);
+        this.gridOptions.api.setRowData(data);
       },
       error => {}
     );

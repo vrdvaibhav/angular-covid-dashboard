@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreenComponent {
 
-  public params: any;
+  private params: any;
 
   agInit(params: any): void {
-      this.params = params;
+      this.params = params.value;
   }
 
 }
